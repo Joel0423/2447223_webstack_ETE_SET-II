@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- displays the breed info from github json -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breed Information</title>
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/breed_info.css">
+</head>
+
+<body>
+    <nav class="nav-bar">
+        <div class="nav-div">
+            <div class="logo"><a href="index.html">Doggos</a> </div>
+            <div class="navbarlinks">
+                <div><a href="breed_info.html">Display Dog Breed Information</a></div>
+                <div><a href="dog_display.html">Display Dogs</a></div>
+                <div><a href="#">Profile</a></div>
+                <div><a href="about.html">About</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- empty div where all the dog information will be entered -->
+    <div id="cards-container">
+
+    </div>
+    <script>
+        //api call to github page
+        async function fetchDogBreeds() {
+            try {
+                const response = await fetch('https://raw.githubusercontent.com/Joel0423/webstack_ETE_json/main/breed_info.json');
+                const dogBreeds = await response.json();
+                displayDogBreeds(dogBreeds);
+            } catch (error) {
+                console.error('Error fetching the dog breeds:', error);
+            }
+        }
+
+        function displayDogBreeds(dogBreeds) {
+            const container = document.getElementById('cards-container');
+            dogBreeds.forEach(breed => {
+                //creating a div to store the dog's data
+                const card = document.createElement('div');
+                card.className = 'card';
+
+                //inserting the dog data into the div
+                card.innerHTML = `
+                    <img src="${breed.imageUrl}" alt="${breed.breedName}">
+                    <h2>${breed.breedName}</h2>
+                    <p><strong>Size:</strong> ${breed.size}</p>
+                    <p><strong>Lifespan:</strong> ${breed.lifespan}</p>
+                    <p><strong>Origin:</strong> ${breed.origin}</p>
+                    <p>${breed.description}</p>
+                `;
+                //adding the dog's data div into the parent container
+                container.appendChild(card);
+            });
+        }
+        //calling the function that makes api call
+        fetchDogBreeds();
+    </script>
+
+</body>
+
+</html>

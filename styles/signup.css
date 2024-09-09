@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.form-container {
+    width: 50%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+    display: flex;
+}
+
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+button#back_button {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+button#back_button:hover {
+    background-color: #ddd;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.error-message {
+    color: #d9534f;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.icon-check,
+.icon-xmark {
+    margin-left: 5px;
+    margin-top: 10px;
+    visibility: collapse;
+}
+
+.icon-check {
+    color: green;
+}
+
+.icon-xmark {
+    color: red;
+}
+
+.border-red-700 {
+    border: 2px solid red;
+}
+
+.border-green-600 {
+    border: 2px solid green;
+}
+
+.collapse {
+    visibility: collapse;
+}
+
+.visible {
+    visibility: visible;
+}
+
+button#submitBtn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button#submitBtn:hover {
+    background-color: #0056b3;
+}
+
+.gender-input-group {
+    display: flex;
+    width: 50%;
+
+}

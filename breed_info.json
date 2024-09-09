@@ -1,0 +1,65 @@
+[
+    {
+        "breedId": "b101",
+        "breedName": "Golden Retriever",
+        "description": "Friendly, Intelligent, and Devoted. Great choice for a family dog.",
+        "size": "Medium",
+        "lifespan": "10-12 years",
+        "origin": "Scotland",
+        "imageUrl": "https://dog.ceo/api/img/retriever/golden/n02099601_3004.jpg"
+    },
+    {
+        "breedId": "b102",
+        "breedName": "Border Collie",
+        "description": "Border collies are extremely energetic dogs and must have the opportunity to get lots of exercise. They love to run.",
+        "size": "Large",
+        "lifespan": "12-15 years",
+        "origin": "United Kingdom",
+        "imageUrl": "https://images.dog.ceo/breeds/collie-border/pippin2.jpg"
+    },
+    {
+        "breedId": "b103",
+        "breedName": "Bull Dog",
+        "description": " Bulldog is a stocky dog that moves with a rolling gait. It has a large head, folded ears, a short muzzle, a protruding lower jaw, and loose skin",
+        "size": "Small",
+        "lifespan": "8-10 years",
+        "origin": "England",
+        "imageUrl": "https://images.dog.ceo/breeds/bulldog-english/jager-1.jpg"
+    },
+    {
+        "breedId": "b104",
+        "breedName": "German Shephard",
+        "description": "Large, agile, muscular dog of noble character and high intelligence. Loyal, confident, courageous, and steady, the German Shepherd is truly a dog lover's delight.",
+        "size": "Medium",
+        "lifespan": "9-13 years",
+        "origin": "Germany",
+        "imageUrl": "https://images.dog.ceo/breeds/germanshepherd/n02106662_8246.jpg"
+    },
+    {
+        "breedId": "b105",
+        "breedName": "Poodle",
+        "description": "They have a distinctive thick, curly coat that comes in many colors and patterns, with only solid colors recognized by breed registries.",
+        "size": "Small",
+        "lifespan": "12-15 years",
+        "origin": "France",
+        "imageUrl": "https://images.dog.ceo/breeds/poodle-standard/n02113799_6304.jpg"
+    },
+    {
+        "breedId": "b106",
+        "breedName": "Beagle",
+        "description": "It looks like a small foxhound and has large brown eyes, hanging ears, and a short coat, usually a combination of black, tan, and white.",
+        "size": "Small",
+        "lifespan": "12-15 years",
+        "origin": "England",
+        "imageUrl": "https://images.dog.ceo/breeds/beagle/n02088364_13477.jpg"
+    },
+    {
+        "breedId": "b107",
+        "breedName": "Mastiff",
+        "description": "A powerful but characteristically gentle dog, the Mastiff has a broad head, drooping ears, a broad short muzzle, and a short coarse coat",
+        "size": "Large",
+        "lifespan": "10-14 years",
+        "origin": "Tibet",
+        "imageUrl": "https://images.dog.ceo/breeds/mastiff-tibetan/n02108551_4807.jpg"
+    }
+]
